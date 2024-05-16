@@ -1,0 +1,47 @@
+<PlayButton>
+    source: 'assets/play-button.png'
+    size_hint: .1, None
+    height: self.width/self.image_ratio
+
+<ParallaxScreen>:
+
+    ScrollingBackground:
+        id: scrolling_background
+        size: root.width, root.height
+        
+        canvas.before:
+            
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: 'assets/layers/1_sky.png'
+                
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                texture: self.mountain_texture
+                
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                texture: self.clouds_texture
+                
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                texture: self.cake_texture
+                
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                texture: self.trees_texture
+                
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                texture: self.ground_texture
+                
+    PlayButton:
+        id: play
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        on_release: root.update_frames()    

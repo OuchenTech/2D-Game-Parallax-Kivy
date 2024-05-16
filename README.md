@@ -9,13 +9,9 @@ Link of the tutorial : https://youtu.be/FNcLon51DLE?si=btqWM5rnrGhgHxSL
 
 ## Getting Started
 
-To get started, you will need to have Kivy and kivymd installed on your machine. You can install Kivy using pip:
+To get started, you will need to have Kivy and kivymd installed on your machine. You can install Kivy and kivymd using pip:
 
 ```bash
 pip install kivy
-
-To install the latest version of kivymd do this:
-
-```bash
 pip install https://github.com/kivymd/KivyMD/archive/master.zip
 
